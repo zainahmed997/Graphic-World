@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAPHIC WORLD</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="index.php" rel="php">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<link rel="shortcut icon" href="images/graphic.png"/>
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index2.html">ABOUT</a></li>
+                    <li><a href="index3.html">SERVICES</a></li>
+                    <li><a href="index4.html">BLOG</a></li>
+                    <li><a href="index5.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-------------- contact us ----------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14472.61938850968!2d67.0951547!3d24.9267943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c4b1fc512ab6bb!2sAptech%20Computer%20Education%20Gulshan-e-Iqbal%20Campus!5e0!3m2!1sen!2s!4v1654647360701!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home-o"><img src="images/adress.png"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Karachi, Sindh, PK</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone-o"><img src="images/phone-call.png"></i>
+                    <span>
+                        <h5>+92 3410290980</h5>
+                        <p>Monday to Saturday, 09AM to 06pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"><img src="images/email.png"></i>
+                    <span>
+                        <h5>zainahmad330@yahoo.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="index.php">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+     <!-------------- Footer ----------->
+
+     <section class="footer">
+        <h2>Follow Us</h2>
+        <div class="icons">
+            <i class="fa fa-facebook"><a href="https://www.facebook.com/"><img src="images/fb.png"></a></i>
+            <i class="fa fa-twitter"><a href="https://twitter.com/"><img src="images/tw.png"></a></i>
+            <i class="fa fa-instagram"><a href="https://www.instagram.com/"><img src="images/ig.png"></a></i>
+            <i class="fa fa-whatsapp"><a href="https://www.whatsapp.com/"><img src="images/wa.png"></a></i>
+         </div>
+         <h5>&copy;GRAPHIC WORLD</h5>
+     </section>
+
+
+
+
+
+    <!-------------- JavaScript for Toggle Menu ----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

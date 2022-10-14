@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAPHIC WORLD</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="index.php" rel="php">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<link rel="shortcut icon" href="images/graphic.png"/>
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index2.html">ABOUT</a></li>
+                    <li><a href="index3.html">SERVICES</a></li>
+                    <li><a href="index4.html">BLOG</a></li>
+                    <li><a href="index5.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Courses For 2022</h1>
+    </section>
+
+    <!-------------- blog page content ----------->
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/ci.jpg">
+                <h2>Our Certificate & Online Courses For 2022</h2>
+                <p>The tests are run by the test provider Certiport. To become an  Adobe Certified Professional in Photoshop for example, you need to pass a timed exam that has two section: a question section with 13 question and a task section with 20 tasks. Candidates have 0 minutes to complete both sections.</p>
+                <br>
+                <p>Adobe has a 2level certification system: The entry level is called Adobe Certified Associate (ACA) and the advanced examination is the Adobe Certified Expert (ACE). If you are intrusted in the expert exam check out my ACE preparation courses.</p>
+                <br>
+                <p>Learn how to use Adobe Lightroom and discover everything you need to know about composition, exposure, editting, precision enhancement and more through this online certification course.</p>
+                <br>
+                <p>The vector qualification enables skilled and efficient support in demanding AUTOSAR Classic projects through close contact with the vector expert,further knowledge transfer is assured.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Adobe Photoshop</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Adobe Illustrator</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Light Room</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Adobe Premiere Pro</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Adobe After Effects</span>
+                    <span>05</span>
+                </div>
+                <div>
+                    <span>Adobe InDesign</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Adobe Experience</span>
+                    <span>19</span>
+                </div>
+                <div>
+                    <span>Adobe InCopy</span>
+                    <span>20</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+     <!-------------- Footer ----------->
+
+     <section class="footer">
+        <h2>Follow Us</h2>
+        <div class="icons">
+            <i class="fa fa-facebook"><a href="https://www.facebook.com/"><img src="images/fb.png"></a></i>
+            <i class="fa fa-twitter"><a href="https://twitter.com/"><img src="images/tw.png"></a></i>
+            <i class="fa fa-instagram"><a href="https://www.instagram.com/"><img src="images/ig.png"></a></i>
+            <i class="fa fa-whatsapp"><a href="https://www.whatsapp.com/"><img src="images/wa.png"></a></i>
+         </div>
+         <h5>&copy;GRAPHIC WORLD</h5>
+     </section>
+
+
+
+
+
+    <!-------------- JavaScript for Toggle Menu ----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
